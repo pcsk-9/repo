@@ -1,0 +1,6 @@
+#!/bin/sh	
+ 
+alias v="nvim"
+alias sv="sudo nvim"
+alias ls='ls -a -hN --color=auto --group-directories-first'
+alias rm='rm -i'

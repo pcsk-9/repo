@@ -1,0 +1,21 @@
+#!/bin/sh
+
+Print
+  maim -s -u | tee ~/pictures/$(date +%s).png | xclip -selection clipboard -t image/png
+XF86AudioMute
+  amixer -q set Master toggle
+XF86AudioLowerVolume
+ amixer -q set Master 5%- unmute 
+XF86AudioRaiseVolume
+ amixer -q set Master 5%+ unmute 
+XF86AudioMicMute
+  amixer -q set Capture toggle
+
+shift + alt + backslash
+ st -e yazi
+super + b
+  firefox
+super + grave
+  ~/script.sh
+alt + Print
+ ~/screensh_viewer.sh
